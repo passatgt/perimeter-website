@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "Perimeter - AR based measuring app for iPhone" %></title>
+    <meta itemprop="name" content="Perimeter - AR based measuring app for iPhone">
+    <meta itemprop="description" content="Measure and Blueprint Outdoor Spaces with AR, Right from Your iPhone!">
+    <meta itemprop="image" content="https://perimeter-app.com/images/og.png">
+    <meta property="og:url" content="http://perimeter-app.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Perimeter - AR based measuring app for iPhone">
+    <meta property="og:description" content="Measure and Blueprint Outdoor Spaces with AR, Right from Your iPhone!">
+    <meta property="og:image" content="https://perimeter-app.com/images/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perimeter - AR based measuring app for iPhone">
+    <meta name="twitter:description" content="Measure and Blueprint Outdoor Spaces with AR, Right from Your iPhone!">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body class="not-scrollable">
+    <%= yield %>
+    <%= javascript_include_tag "site" %>
+  </body>
+</html>
