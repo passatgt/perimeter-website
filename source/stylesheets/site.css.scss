@@ -638,6 +638,138 @@ p {
   margin: 0 auto;
 }
 
+.content-press {
+	color: #083A25;
+	font-size: 17px;
+
+	h3 {
+		font-size: 22px;
+		margin: 1.5em 0 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-size: 32px;
+    }
+	}
+
+	p {
+		margin: 1em 0;
+	}
+
+	ul {
+		margin: 1em 0;
+    padding: 0 0 0 26px;
+
+		li {
+			margin: 0 0 0.2em;
+		}
+	}
+
+	a {
+		color: #28CA86;
+	}
+
+	.press-photos {
+		margin: 1em -0.5em;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+
+		@include bp-mini {
+			margin: 1em -1em;
+		}
+
+		li {
+			width: 100%;
+			padding: 0 0.5em;
+			margin: 0 0 1em 0;
+			list-style-type: none;
+
+			@include bp-mini {
+				width: 50%;
+				padding: 0 1em;
+				margin: 0 0 2em 0;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0;
+			}
+		}
+
+		&-four {
+			margin: 1em -0.5em;
+
+			li {
+			 width: 50%;
+			 padding: 0 0.5em;
+			 margin:  0 0 1em 0;
+			 text-align: center;
+
+			 a {
+				 color: #083A25;
+				 font-size: 14px;
+			 }
+
+			 @include bp-mini {
+		     width: 25%;
+		   }
+		 }
+		}
+
+		&-three {
+			li {
+				width: 50%;
+				text-align: center;
+
+				@include bp-mini {
+					width: 33.3%;
+				}
+
+				img {
+					margin: 0 0 1em 0;
+					box-shadow: 0px 3px 10px rgba(0,0,0,0.25);
+				}
+
+				a {
+					color: #083A25;
+					font-size: 14px;
+				}
+			}
+		}
+
+		&-logos {
+			margin-bottom: 5em;
+
+			li {
+				width: 50%;
+				text-align: center;
+
+				@include bp-mini {
+					width: 33.3%;
+				}
+
+				img {
+					margin: 0 0 1em 0;
+					object-fit: contain;
+					width: 100%;
+					height: 100%;
+				}
+
+				a {
+					color: #083A25;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -820,8 +952,10 @@ ul.features {
 }
 
 .footer {
+  max-width: 940px;
+  margin: 0 auto;
   border-top: 1px solid #E1E7E5;
-  padding: 40px 0 40px 0;
+  padding: 40px 20px 40px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

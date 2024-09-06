@@ -1,0 +1,97 @@
+---
+title: Perimeter Press Kit
+---
+
+<div class="content content-press">
+
+	<h3><span>ℹ️</span> What is Perimeter?</h3>
+	<p>Perimeter was inspired by my brother, a landscaper, who needed help calculating areas for material estimates. I realized how difficult it could be to measure irregularly shaped spaces. Perimeter uses AR technology to make accurate perimeter and area calculations easy.</p>
+
+	<p>The idea of the app came to me after my borther - who is a landscaper - asked me to help him measure out various areas so he could calculate the material he needs to do the job. Since it was not a simple rectangle, it was actually pretty hard to get an accurate measurement. </p>
+	<p>So I started to developer Perimeter, which uses AR to map out the area and calculate precise perimeter and area measurements. It can also create a branded PDF blueprint, which can printed and annotated.</p>
+
+	<h3><span>⭐️</span> Main features</h3>
+	<ul>
+		<li><strong>Uses ARKit:</strong> Walk around any outdoor space and place virtual pins using your device’s camera to measure accurately.</li>
+		<li><strong>Instant Calculations:</strong> Get precise area, perimeter, and volume calculations in multiple units.</li>
+		<li><strong>Blueprint Generation:</strong> Export accurate top-down blueprints of measured areas as PDF.</li>
+		<li><strong>Customization:</strong> Add your business logo and details to your blueprints.</li>
+		<li><strong>Metric & Imperial Units:</strong> Supports various unit measurements.</li>
+		<li><strong>Privacy-Focused:</strong> Works offline; your data stays on your device.</li>
+	</ul>
+
+	<h3><span>👷</span> Who’s it for?</h3>
+	<ul>
+		<li>Homeowners: Plan and measure gardens, lawns, or any outdoor spaces with ease.</li>
+		<li>Contractors & Builders: Get precise measurements for foundations, patios, and more.</li>
+		<li>Gardeners & Landscapers: Plan and visualize your outdoor projects with ease.</li>
+		<li>Real Estate Agents: Create professional blueprints to showcase your properties.</li>
+		<li>Architects: Create blueprints for your projects with ease.</li>
+	</ul>
+
+	<h3><span>💰</span> About pricing</h3>
+	<p>The app is <a href="https://apps.apple.com/app/perimeter-pro/id6624308929"><strong>free to download</strong></a>. The free version allows you to measure and preview blueprints. A one-time $4.99 in-app purchase unlocks the PRO version, enabling saving and exporting measurements.</p>
+
+	<h3><span>👋</span> Who made Perimeter?</h3>
+	<p>I'm <a href="https://twitter.com/visztpeter" target="_blank">Peter Viszt</a>, a freelance designer / web-developer from Hungary.</p>
+	<p>Please contact me at <a href="mailto:media@perimeter-app.com">media@perimeter-app.com</a> in case you need a promo code for the IAP or if you have any other questions regarding me or my app.</p>
+
+	<h3><span>📷</span> Sample blueprints and screenshots</h3>
+	<p><strong>Promo shots</strong></p>
+	<ul class="press-photos">
+		<% for i in 1..4 do %>
+		<li>
+			<a href="/press/promo-<%= i %>.png">
+				<img src="/press/promo-<%= i %>.png" />
+			</a>
+		</li>
+		<% end %>
+	</ul>
+
+	<p><strong>Screenshots (without phone)</strong></p>
+	<ul class="press-photos press-photos-four">
+		<% for i in 1..8 do %>
+			<li>
+				<a href="/press/screenshot-simple-<%= i %>.png">
+					<img src="/press/screenshot-simple-<%= i %>.png" />
+				</a>
+			</li>
+		<% end %>
+	</ul>
+
+	<p><strong>Screenshots (with phone)</strong></p>
+	<ul class="press-photos press-photos-four">
+		<% for i in 1..8 do %>
+			<li>
+				<a href="/press/screenshot-<%= i %>.png">
+					<img src="/press/screenshot-<%= i %>.png" />
+				</a>
+			</li>
+		<% end %>
+	</ul>
+
+	<p><strong>Sample blueprints</strong></p>
+	<ul class="press-photos press-photos-three">
+		<% for i in ['blueprint'] do %>
+			<li>
+				<a href="/press/<%= i %>.png">
+					<img src="/press/<%= i %>.png" />
+				</a>
+				<a download href="/press/<%= i %>.pdf">Download as PDF</a>
+			</li>
+		<% end %>
+	</ul>
+
+	<p><strong>App icon & logo</strong></p>
+	<ul class="press-photos press-photos-logos">
+		<% for i in ['app-icon', 'logo', 'logo-alt'] do %>
+			<li>
+				<a href="/press/<%= i %>.png">
+					<img src="/press/<%= i %>.png" />
+				</a>
+				<a download href="/press/<%= i %>.svg">Download as SVG</a>
+			</li>
+		<% end %>
+	</ul>
+
+</div>

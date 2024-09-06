@@ -27,7 +27,9 @@
     <%= stylesheet_link_tag "site" %>
   </head>
   <body class="not-scrollable">
+    <%= partial "partials/header" %>
     <%= yield %>
+    <%= partial "partials/footer" %>
     <%= javascript_include_tag "site" %>
   </body>
 </html>
